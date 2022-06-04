@@ -1,0 +1,33 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<p>Ingrese numero de camada para buscar los cursos correspondientes:</p>
+
+
+<form action="/appNM/buscar/" method="GET">
+
+    <input type="number" name="camada" id="camada">
+
+    <input type="submit" value="Buscar">
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

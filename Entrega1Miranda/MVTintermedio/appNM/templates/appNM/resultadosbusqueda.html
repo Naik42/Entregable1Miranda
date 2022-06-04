@@ -1,0 +1,35 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<p>Estamos buscando la camada : {{camada}} </p>
+
+
+{% if cursos %}
+
+<ul>
+    
+{% for curso in cursos %}
+
+    <li> {{curso.nombre}} </li>
+    <li> {{curso.camada}} </li>
+
+{% endfor %}
+
+</ul>
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

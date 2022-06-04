@@ -1,0 +1,30 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+    <h1>Cursos</h1>
+    <p>Info de los cursos:</p>
+    
+    
+
+
+    <p>Puede cargar cursos:</p>
+
+
+    <form action="" method="POST"> {% csrf_token %}
+
+        <table>
+
+            {{ miFormulario.as_table }}
+
+        </table>
+
+   
+        <input type="submit" , value="Cargar">
+
+    </form>
+
+{% endblock %}
