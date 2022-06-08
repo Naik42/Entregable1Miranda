@@ -11,14 +11,24 @@
    
 
     <ul>
-	{% for curso in cursos %}
+	{% for curso in Curso %}
 		<li> {{curso.nombre}} </li>
 		<li> {{curso.camada}} </li>
 	{% endfor %}
 
     </ul>
 
+    
+        
+        <p>¿Qué desea hacer?: </p>
+        
+        <a class="navbar-brand" href="{% url 'BusquedaCurso' %}">Buscar curso</a>
 
+
+        <a class="navbar-brand" href="{% url 'NuevoCurso' %}">Cargar Cursos</a>
+
+        
+    
 
 
 {% endblock %}
